@@ -1,0 +1,44 @@
+/*
+flex
+- css 레이아웃의 꽃
+- css 레이아웃 배치에 중점을 두고 고안되었기 때문에, 기존의 float 방식보다 훨씬 수월하고 간단하게 레이아웃을 잡을 수 있다.
+1. 요소의 속성을 flex로 변경 display:flex
+2. flex-direction, 중심축의 방향을 정한다.
+    - flex-direction : row(기본값) | column
+3. justify-content, 중심축 방향 정렬
+    [1]justify-content:flex-start(기본값)
+    [2]justify-content:flex-end
+    [3]justify-content:flex-center, 여백을 주지 않아 따로 줘야한다.
+
+    // space로 시작하는 애들은 기본 여백이 들어있어 균일한 규칙으로 배치된다.
+    [4]justify-content:space-between
+    - 컨테이너 안의 아이템들이 균일한 여백을 두고 배치된다.
+    - start와 end부분이 끝에 붙어 여백이 없다.
+
+    [5]justify-content:space-around
+    - start와 end부분에도 모두 균일한 약간의 여백이 들어간다.
+    - start와 end는 가운데 여백의 반의 크기로 좀다르다.
+    [6]justify-content:space-evenly
+    - justify-content:space-around와 비슷하지만 여백의 크기가 다르다.
+    - start와 end도 가운데 여백과 모두 균일한 여백을 가진다.
+
+4. align-items, 중심축 반대 방향 정렬
+    - 즉 flex-direction row면 세로 column이면 가로이다.
+    [1] align-items: stretch(기본값)
+    - 아이템의 크기와 상관없이 값을 늘려 꽉채우게 만든다.
+    [2] align-items:flex-start
+    - 컨테이너의 시작점을 기준으로 정렬한다.
+    [3] align-items:flex-end
+    - 컨테이너의 끝 지점을 기준으로 정렬한다.
+    [4] align-items:flex-center
+    - 컨테이너의 중심을 기준으로 정렬한다.
+
+주의!
+1. align-items는 flex-item이 한 줄일 때 우선 적용!
+- 두 줄 이상일 때에는 align-content라는 다른 속성을 써주어야 한다. 
+2. flex-direction이 바뀌면 중심축의 방향이 바뀐다!
+- 중심축의 방향이 바뀌면 justify-content와 align-item의 정렬 방향도 함께 바뀌게 된다.
+
+즉 flex-direction과 justify-content는 같은 방향이고
+align-items는 반대 방향이다.
+*/

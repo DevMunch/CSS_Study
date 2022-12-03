@@ -1,0 +1,28 @@
+.box1{
+    height: 400px;
+    background-color: red;
+    float:left;
+}
+
+.box2{
+    height: 200px;
+    background-color: blue;
+    float: right;
+}
+
+.box{
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* .box3{
+    clear:both;
+} */
+
+/* 
+    여러곳에 clear 하면 불편하기 때문에 마지막에 빈 div를 만들고 이렇게 설정해 주면 된다.
+*/
+.clearfix{
+    clear:both;
+}
