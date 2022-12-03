@@ -1,0 +1,62 @@
+.container{
+    background-color: gray;
+}
+/*
+ box-sizing 속성
+ 1. content-box (기본값)
+    - Content 영역을 기준으로 box의 size를 적용
+ 2. border-box
+    - Border 영역을 기준으로 box의 size를 적용
+
+    사람이 인식할 때는 보더박스를 기준으로 인식하지만 컴퓨터는
+    컨텐트 박스를 기준으로 인식
+    컨텐트 400px + 패딩 100px => 보더박스 500px
+
+    아래 .box1을 보면 content-box의 특징을 알수있다.
+    200px, 200px의 크기에서 패딩을 50을 주었기때문에
+    300px, 300px이 된다.
+
+*/
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 3px solid blue;
+    box-sizing: content-box;
+    padding: 50px;
+    
+}
+
+/*
+    아래 .box2를 보면 border-box의 특징을 알수있다.
+    크기는 200px, 200px로 고정되고 패딩이 안쪽으로 형성되어
+    컨텐츠 영역이 100px, 100px로 줄어든다.
+*/
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 3px solid red;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+/*
+    아무것도 적지 않는다면 기본값인 content-box로 설정되어
+    box1과 같아진다.
+    그렇기 때문에 처음 프로젝트를 시작할때 박스사이징을 보더박으로 변경한다.
+*/
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 3px solid green;
+    padding: 50px;
+}
+
+.text{
+    width: 200px;
+    height: 50px;
+    background-color: red;
+}
+
