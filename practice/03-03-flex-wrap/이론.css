@@ -1,0 +1,41 @@
+/*
+    flex-wrap
+    - flex-item이 여러개일 때, item들의 줄바꿈을 허용할 것인지 말 것인지 결정한다.
+    
+    flex-wrap:nowrap (기본값)
+    - 줄바꿈이 허용되지 않아서 아이템이 찌그러지더라도 한줄에 들어간다.
+    - 가로사이즈의 총합이 아무리 커져도 무조건 아이템이 한줄안에 들어가도록 강제한다.
+
+    flex-wrap:wrap 
+    - 아이템의 가로사이즈가 컨테이너의 가로사이즈를 초과하면 다음 줄로 이동한다.
+
+    주의!
+    - align-tems는 flex-item이 한 줄일 때 우선 적용!
+    - 두 줄 이상일 때에는 align-content라는 다른 속성을 써주어야 한다.
+
+    align-content
+    - 여러 줄이 된 Flex-item의 중심 반대 축 정렬을 어떻게 할 지 결정한다.
+
+    align-content:stretch(기본값)
+    align-content:flet-start
+    align-content:flet-end
+    align-content:center
+
+    align-content:space-between
+    - 첫아이템과 마지막 아이템은 각각 start 라인과 end 라인에 붙게된다.
+    align-content:space-around
+    - start와 end에도 여백이 들어가며 중간쪽은 위아래 여백이 합해지므로 2배의 여백을가진다.
+    align-content:space-evenly
+    - 모든 여백을 동일하게 해준다.
+
+    flex-flow
+    - flex-direction과 flex-wrap을 합쳐놓은 단축 속성
+    ex)border: 1px solid red;와 같은 단축 속성.
+    ex)flex-direction:row;와 flex-wrap:wrap;를 합치면
+    -> flex-flow:row wrap;
+
+    flex-item 속성들
+    - order : item의 순서를 지정
+    - flex-basis : item의 기본 사이즈를 지정
+    - flex-shrink,flex-grow등등...
+*/

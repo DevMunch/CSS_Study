@@ -1,0 +1,17 @@
+/*
+p:first-child
+- 이건 태그와 위치가 둘다 정확해야한다.
+- 해당 태그중에서 첫번째 위치이면서 p태그여야한다.
+<h1><p> 이렇게 두번째에 p가오면 p가 처음으로 존재해도 적용x
+
+p:first-of-type
+- 이건 해당 태그만 존재하면된다.
+- 즉 p태그중 첫번째에 해당하는 것이 적용된다.
+<h1><p> 이렇게 두번째에 p가와도 첫번째 p이므로 적용된다.
+
+아래의 속성을 가진다.
+first-child         first-of-type
+last-child          last-of-type
+nth-child(n)        nth-of-type(n)
+*/
+
