@@ -1,0 +1,103 @@
+/*
+    font-size
+    - 폰트의 크기
+
+    font-weight
+    - 택스트의 두께를 지정한다.
+
+    text-decoration
+    - 텍스트에 장식용 선을 추가하거나 제거할때 사용한다.
+    - line-through : 텍스트의 중앙을 가로지르는 선을 긋는다.
+    - overline : 텍스트 위로 선을 긋는다.
+    - underline : 텍스트 아래로 밑줄을 긋는다.
+
+    color
+    - 텍스트의 색을 지정한다.
+    color: red;
+    color: #5145d8;
+    color: rgb(213,229,37);
+
+    line-height
+    - 텍스트의 행간을 설정한다.
+    - line-height:1 , 1배 즉 폰트사이즈와 동일한 크기.
+    - line-height:1.8, 1.8배
+    - line-height:52px
+
+    letter-spacing
+    - 텍스트의 자간을 설정한다.(글자 사이의 간격)
+    letter-spacing:20px;
+    letter-spacing:0.5em;
+    letter-spacing:-2px;
+    letter-spacing:normal (기본값 아무런 설정을 하지않음)
+
+    word-spacing
+    - 텍스트의 단어 간 간격을 지정한다.
+    word-spacing:20px;
+    word-spacing:0.5em;
+    word-spacing:normal;
+
+    text-align
+    - 블록요소나 표 안에서 텍스트의 가로 정렬 방식을 지정한다.
+    text-align: left
+    text-align: center
+    text-align: right
+    text-align: justify (양쪽정렬)
+
+    vertical-align
+    - 인라인 요소나 표 안에서 텍스트의 세로 정렬 방식을 지정한다.
+    vertical-align: top;
+    vertical-align: middle;
+    vertical-align: bottom;
+
+    text-indent
+    - 텍스트의 들여쓰기를 설정한다.
+    text-indent : 50px (문장 앞의 글자가 들여쓰기된다.)
+    text-indent : 0; (기본값)
+
+    text-transform
+    - 영문 텍스트의 대/소문자를 바꿀 수 있다.
+    text-transform : none (기본값)
+    text-transform : capitalize (각 문자의 첫글자를 대문자로 변환)
+    text-transform : uppercase (모든 문장을 대문자로 변환)
+    text-transform : lowercase (모든 문장을 소문자로 변환)
+
+    word-break
+    - 텍스트가 콘텐츠 박스 영역 밖으로 넘쳤을 때, 어떻게 줄을 바꿀지 설정한다.
+    word-break: keep-all, 띄어쓰기를 기준으로 줄바꿈
+    word-break: break-all, 한단어 한단어를 쪼개서 줄바꿈
+
+    overflow-wrap
+    - 단어가 콘텐츠 박스 영역 밖으로 넘쳤을 때, 줄바꿈 여부를 설정한다.
+    overflow-wrap : normal, 콘텐츠 영역을 벗어난다.
+    overflow-wrap : break-work
+    - 한줄 초과시 자동으로 단어를 잘라서 다음 라인으로 들어간다.
+    - 기본적으로 keep-all 이지만 만일 넘칠경우 그 단어만 쪼개서 내린다.
+    - 장문의 글에서 가장 적절하다.
+    overflow-wrap : break-all 
+    - 모든 단어를 음절단위로 쪼갠다.
+
+    overflow
+    - 콘텐츠가 커서 요소 안에서 내용을 다 보여주기 힘들 때, 어떤 방식으로 보여줄지 설정한다.
+    overflow : visible
+    - 기본값으로 영역을 벗어나도 자르거나 숨기지않고 모두 출력한다.
+    overflow : hidden
+    - 영역을 벗어나면 잘라서 보이지 않도록 한다.
+    overflow : scroll
+    - 해당 요소안에 강제로 스크롤을 넣어준다.
+    - 사이즈가 작아서 작동하지 않아도 스크롤을 넣는다.
+    overflow : auto
+    - 내용이 적을 때에는 스크롤을 넣지않는다.
+    - 사이즈가 넘치면 스크롤을 넣어준다.
+
+    text-overflow
+    - [줄바꿈을 하지 않을 때], 요소 밖으로 넘치는 text를 어떻게 표기할 것인지 설정한다.
+    - 줄바꿈을 하지 않아야하기 때문에 아래의 두가지 속성이 선행되어야 한다.
+    1. white-space:nowrap
+    - 기본값은 wrap으로 줄바꿈인데 nowrap으로 설정해 줄바꿈을 하지않는다.
+    2. overflow:hidden
+
+    text-overflow:clip
+    - 기본값, 뚝짤려있다.
+    text-overflow:ellipsis
+    - 넘칠경우 ...으로 표기되어 자연스럽다.
+*/

@@ -1,0 +1,12 @@
+/*
+
+상속되는 속성
+color, font-family, font-size...
+
+상속되지 않는 속성
+padding, margin, border...
+
+여러개의 상속 속성이 겹쳤을 때 우선 적용되는 것.
+cascading이라는 룰이 우선순위를 결정한다.
+
+*/

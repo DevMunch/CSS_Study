@@ -1,0 +1,58 @@
+/*
+[1]background-color: #f12db0
+- 요소의 배경에 색상을 지정한다.
+
+[2]background-image
+- 요소의 배경 이미지를 한 개, 혹은 여러 개 지정한다.
+- background-image: url("이미지 경로")
+- 그라데이션도 지정이 가능하다.
+- background-image: linear-gradient(to top, red, blue);
+    (to top, red, blue) 방향, 시작색상, 종료색상
+    방향 생략시 아래에서 위로가 기본값
+- 여러개의 이미지를 넣을 수 있고 먼저 선언한 것이 가장 위에 깔린다.
+
+[3]background-position
+- 요소의 배경 이미지의 위치를 지정한다.
+- background-position:center
+- background-position:left
+- background-position:top right // 오른쪽 위에 위치
+- background-position:50px 150px // x축 y축
+
+[4] background-repeat
+- 요소의 배경 이미지의 반복 여부, 반복 방향을 지정합니다.
+- background-repeat: no-repeat 하나만 출력
+- background-repeat: repeat (기본값) 반복되어서 출력
+- background-repeat: repeat-x, x축으로만 반복
+- background-repeat: repeat-y, y축으로만 반복
+
+[5] background-size
+- background-size:auto(기본값), 배경이 가진 사이즈 그대로.
+- background-size:cover, 이미지를 늘려서 요소안에 빈틈이 없도록 이미지는 찌그러지지 않도록 하면서 꽉채워준다.
+- background-size:contain, 이미지를 늘려서 꽉채우지만 빈틈이 있을수도 있다 중요한건 이미지가 모두 잘리지 않고 보여야할때 사용한다.
+- background-size:200px 160px 직접 지정
+
+[6] background-attachment
+- 요소의 배경 이미지의 스크롤 여부를 지정한다.
+- background-attachment : scroll (기본값) // 박스안의 스크롤을 내려도 변경x
+- background-attachment : fixed // 배경이미지가 고정된다.
+- background-attachment : local // 박스안의 스크롤을 내려도 변경o
+
+background 단축속성
+- 순서가 매우 중요하다.
+- background: color image repeat position/size attachment
+ex) background: red url("../star.png") no-repeat center/cover fixed
+
+object-fit
+- <img>나 <video>등 대체요소의 내용이 지정된 너비와 높이에 맞춰지는 방식을 지정한다.
+- object-fit:fill (기본값) // 찌그러지면서 정해진 크기로 맞춰진다.
+- object-fit:cover // 요소에 맞게 빈틈없이 적절비율로 꽉채운다.
+- object-fit:cotain // 꽉채우는 것보다 이미지가 모두 보이는것이 목적이다.
+- object-fit:none // 이미지의 원본사이즈를 그대로 보여준다. 기본값이 fill이므로 none 만으로도 찌그러지지않는다.
+
+object-position
+- <img>나 <video> 등 대체요소의 콘텐츠 정렬 방식을 지정한다.
+- object-position:center top;
+- object-position:100px 50px;
+- object-position:left;
+- object-position:center top;
+*/
