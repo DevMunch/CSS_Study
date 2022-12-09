@@ -1,0 +1,14 @@
+/*
+
+transition-property
+- 어떠한 속성(property)에 transition을 적용할 것인지 지정한다.
+- transition-property: color, transform
+
+transition-duration
+- transition에 걸리는 시간을 지정한다.
+- transition-duration: 0.2s
+
+transition-timing-function
+- transition의 속도 패턴을 지정한다.
+- transition-timing-function: ease-in-out
+*/

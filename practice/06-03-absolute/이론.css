@@ -1,0 +1,45 @@
+/*
+position의 속성값
+- static (기본값)
+- relative
+- absolute
+- fixed
+- sticky
+
+top/left/right/bottom
+- 해당 방향 기준으로 요소의 좌표값을 변경한다.
+
+[1]position: static(기본값)
+- 요소를 문서상 원래 있어야 하는 위치에 배치한다.
+- top/left/right/bottom 적용 불가
+- z-index도 적용이 불가능하다.
+
+[2]position: relative
+- 원래 있던 자리를 기준으로 요소의 위치를 조정할 수 있다.
+- top/left/right/bottom 적용 가능
+
+[3]position: absolute
+- 절대 좌표를 기준으로 요소의 위치를 조정할 수 있다.
+- 절대 좌표(부모의 요소중 relateve가 적용된 박스를 기준으로 적용)
+- 만일 적용된 조상이 없다면 body 전체가 기준이되어 적용된다.
+- top/left/right/bottom 적용 가능
+
+[4]position: fixed
+- 스크롤과 무관하게 뷰포트를 기준으로 요소의 위치를 설정할 수 있다.
+ex) 쇼핑몰에서 스크롤을 내려도 고정되어있다.
+- absolute와 같아보이지만 스크롤을 내려보면 다른것을 알 수 있다.
+기준 : viewport
+
+[5]position: sticky
+- 요소의 원래 위치에 있다가 스크롤이 내려가면 지정한 좌표에 고정된다.
+- static과 fixed를 혼합한 느낌
+- 스크롤이 내려가기 전 최초 상태에서는 static과 같은 위치정보를 가진다는 것이 fixed와 다르다.
+기준 : 부모 요소의 좌표
+
+[6]z-index
+- 여러개의 요소가 겹쳐져 있을 때, 무엇이 앞으로 나올지 결정하는 속성
+1. z-index: auto (기본값)
+- 따로 숫자를 지정하지 않으면 그 박스는 html의 기본 위치에 자리를 잡는다.
+2. z-index: 1 
+- 이렇게 숫자를 지정할 수 있고 숫자가 클 수록 앞에 위치하게 된다.
+*/
