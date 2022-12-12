@@ -2,4 +2,37 @@
     transform이란?
     - 변형 시킨다는 의미
     - 요소에 이동, 회전, 확대축소, 비틀기 등의 변형 효과를 줄 수 있다.
+    
+    [transfrom의 속성값]
+    translate(x,y)
+    - 요소의 좌표를 움직일 수 있다.
+    - x축으로 x만큼, y축으로 y만큼 이동시킨다.
+
+    translateX(n)
+    - 요소의 X축 좌표를 n만큼 움직을 수 있다.
+
+    translateY(n)
+    - 요소의 Y축 좌표를 n만큼 움직을 수 있다.
+
+    scale(x,y)
+    - X축으로 x만큼, Y축으로 y만큼, 요소를 축소 혹은 확대한다.
+    - scaleX(n), scaleY(n) 
+    - scale(n)일 경우 x, y축 동일하게 축소한다.
+
+    skew(x-angle,y-angle)
+    - X축으로 x도 만큼, Y축으로 y도 만큼, 요소를 기울인다.
+    - skew(15deg,15deg)
+    - skewX(), skewY()
+
+    rotate(angle)
+    - 요소를 n만큼 회전시킨다.
+    - 시계방향으로 돌아간다.
+    - 음수일 경우 반시계방향
+
+    transform
+    - 변환 함수를 중첩 적용 시키는 것이 가능한 속성이다.
+
+    transform: skew(30deg,10deg), rotate(45deg);
+
+    transform: scaleY(0.75), skewX(20);
 */

@@ -36,21 +36,6 @@
     color:#ffffff;
 }
 
-.target1{
-    transform:translate(50%,20px);
-}
-
-.target2{
-    transform: scale(0.8);
-}
-
-.target3{
-    /* transform:skew(30deg,0); */
-    /* transform: skew(0,30deg); */
-    transform: skew(30deg,20deg);
-}
-
-.target4{
-    /* transform: rotate(45deg); */
-    transform: rotate(-45deg); 
+.target1 {
+    transform: scaleY(0.75) skewX(20deg);
 }
