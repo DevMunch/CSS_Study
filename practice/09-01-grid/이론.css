@@ -1,0 +1,42 @@
+/*
+    flex는....
+    - 1차원적 구조
+    - row 혹은 column 방향 택1
+
+    Grid
+    - 2차원적 구조
+    - row와 column 레이아웃 동시 설정 가능
+
+    1. grid-template-rows
+    - grid의 행의 개수 및 크기를 지정할 수 있다.
+    - grid-template-rows : 1fr 2fr 200px
+
+    2. grid-template-columns
+    - grid의 열의 개수 및 크기를 지정할 수 있다.
+    - grid-template-columns : 1fr 2fr 200px
+
+    fr이란?
+    - fraction(분수)의 약자
+    - grid-template에서 사용할 수 있는 비율 단위
+
+    repeat(a,b)
+    - grid-template에서 사용할 수 있는 반복 함수 b 규격의
+    grid-template을 a개 생성한다.
+    - grid-template-columns:repeat(4,1fr)
+
+
+    grid-template-columns:repeat(4,1fr) 
+                    = 
+    grid-template-columns:1fr 1fr 1fr 1fr
+
+    grid-template-rows:repeat(2, 1fr 200px)
+                    =
+    grid-template-rows:1fr 200px 1fr 200px
+
+    grid-template-rows:3fr repeat(2, 1fr 200px)
+                    =
+    grid-template-rows:3fr 1fr 200px 1fr 200px
+
+    grid-template-columns:200px repeat(3, 1fr);
+    grid-template-rows:1fr 2fr
+*/

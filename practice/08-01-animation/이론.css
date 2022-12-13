@@ -1,0 +1,68 @@
+/*
+    transition vs animation
+
+    transition
+    - 특정한 이벤트를 기점으로 작동한다.(hover등)
+
+    animation
+    - 시작하기 위한 이벤트가 필요 없다.
+    - 시작, 정지, 반복까지 제어할 수 있다.
+
+    animation이 더 좋은것 아닌가?
+
+    animation 속성은...
+    @keyframes로 애니메이션을 정의하고, 정의한 애니메이션을
+    불러와서 제어해주어야 한다.
+
+    css 애니메이션을 만들 때...
+    1. transition으로 만들 수 있는 것은, transition 안에서 해결한다.
+    2. transutuin으로는 만들 수 없는 애니메이션을 animation과 keyframes로 만든다.
+
+    @keyframes란?
+    - CSS 애니메이션의 시작, 중간, 끝 등의 중간상태를 정의한다.
+
+    @keyframes 애니메이션이름{
+        from{
+            시작 시점의 css
+        }
+        to{
+            종료 시점의 css
+        }
+    }
+    - from & to 대신 (%) 표기도 가능!
+    @keyframes 애니메이션이름{
+        0%{
+            시작 시점의 css
+        }
+        50%{
+            중간 시점의 css
+        }
+        100%{
+            종료 시점의 css
+        }
+    }
+
+    animation 관련 속성들
+    1. animation-name
+    - 어떠한 keyframes를 요소에 적용할 것인지 지정한다.
+    2. animation-duration
+    - 애니메이션을 한 번 재생하는데 걸리는 시간을 설정한다.
+    3. animation-direction
+    - 애니메이션 재생 방향을 정의한다. (정방향/역방향)
+    - nomal(기본값) : 정방향으로 재생한다.
+    - reverse : 역방향으로 재생한다.
+    - alternate : 정방향으로 재생한다. 단, 반복시 정방향/역방향을 번갈아 재생한다.
+    - alternate-reverse : 역방향으로 재생한다. 단, 반복시 역방향/정방향을 번갈아 재생한다.
+    4. animation-iteration-count
+    - 애니메이션 재생 횟수를 정의한다.
+    - infinite : 무한재생
+    - 기본값은 0으로 한번재생한다.
+    5. animation-timing-function
+    - 애니메이션 재생 패턴을 정의한다.
+    6. animation-delay
+    - 애니메이션 시작을 얼마나 지연할지 설정한다.
+
+    animation 단축 속성
+    - animation: moveRight 0.4s linear 1s infinite alternate
+    - 1.name 2.duration 3.timing-function 4.delay 5.iteration-count 5.direction
+*/
