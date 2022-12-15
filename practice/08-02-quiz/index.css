@@ -51,10 +51,11 @@
 }
 
 @keyframes rotateStar{
-    form{
-        transform: scale(0);
-    }to{
-        transform: scale(1);
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scale();
     }
 }
 
@@ -71,7 +72,7 @@
     width: 18px;
     height: 32px;
     border-radius: 10px;
-    border: 20px solid black;
+    border: 2px solid black;
     margin-bottom: 5px;
 }
 
@@ -91,4 +92,43 @@
     height: 4px;
     border-radius: 50%;
     animation: scroll-down 1.2s ease-in-out infinite;
+}
+
+@keyframes bonuceMouse{
+    0%{
+        transform: translateY(-10px);
+    }
+    75%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+.loading{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate{
+    margin-bottom: 10px;
+}
+
+.rotate svg{
+    width: 30px;
+    height: 30px;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }

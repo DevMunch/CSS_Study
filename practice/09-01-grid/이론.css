@@ -39,4 +39,9 @@
 
     grid-template-columns:200px repeat(3, 1fr);
     grid-template-rows:1fr 2fr
+
+    3. grid-column / grid-row
+    - gid-item이 얼마만큼의 영역을 차지할지 정ㅢㅏㄴ다.
+    - grid-column: 1/3
+    - grid-column은 grid-line의 번호, grid-row는 grid-number의 번호를 기준으로 영역을 할당한다.
 */
