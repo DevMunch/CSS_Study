@@ -1,0 +1,36 @@
+
+/*
+
+반응형 웹
+
+미디어 쿼리란?
+- 뷰포트의 너비에 따라 웹 사이트의 스타일 시트를 수정할 수 있다.
+
+@media screen and (max-width:500px){
+    // 스크린의 viewport 너비가 500px 이하일 경우
+    // 적용시킬 스타일 시트
+}
+
+breakPoint
+크기            중단점
+Mobile      0 ~ 767px
+Tablet      768px ~ 1023px
+PC          1024px ~ 1439px
+PC Large    1440px ~
+
+*/
+
+/*
+
+max-width&max-height
+- 해당 요소의 최대 너비 or 최대 높이를 설정합니다.
+
+max()
+- 소괄호 안에 입력된 값 중 제일 높은 값을 속성값으로 출력하는 함수
+- height: max(320px, 20%)
+
+min()
+- 소괄호 안에 입력된 값 중 제일 낮은 값을 속성값으로 출력하는 함수
+- width: min(1240px, 100%)
+
+*/
